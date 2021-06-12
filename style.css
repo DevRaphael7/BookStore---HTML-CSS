@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* -- Cabeçalho --*/
+header{
+    width: 100%;
+    height: 20vh;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    background-image:  linear-gradient(rgba(253, 69, 0, 0.5),rgba(253, 69, 0, 0.4)), url("images/Background-1.jpg");
+    height: 70%;
+}
+.container{width: 25%;}
+.cabecalho .container, h1{
+    margin-top: 10px;
+}
+.button-f{
+    font-size: 2.5vh;
+    background-color: transparent;
+    border: 1px solid #f8a005;
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px;
+}
+.button-f:hover{
+    background: #f8a005;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.cabecalho button, h1{
+    margin-left: 10px;
+}
+.cabecalho .container .fas{
+    padding-left: 20px;
+    font-size: 30px;
+    color: #fff;
+}
+.cabecalho .container .fas:hover{
+    color: #f8a005;
+}
+/* Linha de navegação */
+.nav-links{
+    width: 100%;
+    height: 30%;
+    background: rgba(253, 69, 0, 1.0);
+}
+.nav-links ul{
+    padding-top: 1.5vh;
+    padding-left: 1.0vh;
+}
+.nav-links ul li{
+    display: inline;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+}
+.nav-links ul li:hover{
+    background: #f8a005;
+    text-decoration: none;
+}
+.nav-links ul .fas{
+    padding-left: 5px;
+}
+.sub-menu{
+    display: none;
+}
+.ativar:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: rgba(253, 69, 0, 1.0);
+    margin-top: 1vh;
+    z-index: 1;/* Para sobrepor outras tags */
+}
+.ativar:hover .sub-menu ul{
+    padding-top: 5px;
+    display: block;
+}
+.ativar:hover .sub-menu ul li{
+    display: block;
+    text-align: left;
+    padding: 10px;
+    margin: 4px;
+    border-bottom: 1px solid #fff;
+}
+.ativar:hover .sub-menu ul li::after{
+    content: "\2794";
+    padding-left: 2px;
+}
+/* Introdution */
+.title{
+    font-size: 22px;
+    color: #fff;
+    margin: 5px;
+}
+.introducao{
+    height: 62.5vh;
+    background: linear-gradient(#f93415, #f92e0e, #f93415);
+    text-align: center;
+    position: relative;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 3%;
+}
+.introducao h1, p{
+    color: #fff;
+}
+.introducao p{
+    font-weight: 600;
+    font-size: 15px;
+}
+.introducao img:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+/* Autores Famosos */
+.autores{
+    width: auto;
+    margin: 5%;
+    text-align: center;
+}
+.autor{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin-right: 5vh;
+}
+.autores img{
+    border-radius: 20px;
+    background: blue;
+}
+.autor .title{
+    opacity: 0;
+    position: absolute;
+    bottom: 1%;
+    left: 20%;
+    transition: 0.5s;
+}
+.contorno{
+    border-radius: 20px;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+}
+.autor:hover .contorno{
+    background-color: rgba(248, 160, 5, 0.4);
+}
+.autor:hover .title{
+    opacity: 100%;
+    bottom: 50%;
+    color: #fff;
+}
+hr{
+    margin-top: 1vh;
+    height: 5px;
+    border-radius: 25px;
+    background: #f8a005;
+    border: none;
+}
+/* Livros */
+.livros{
+    text-align: center;
+    margin: 5%;
+}
+.book{
+    text-align: left;
+    display: block;
+    background: #6f6b6a;
+    width: auto;
+    border-radius: 10px 10px 10px 0;
+}
+.book p{margin: 5px;}
+.book img{margin: 15px;}
+.estrelas{margin: 5px;}
+.estrelas ul{list-style: none;}
+.estrelas ul li{display: inline;}
+.estrelas .fas{color: #f8a005}
