@@ -34,17 +34,13 @@ header{
     transition: 0.5s;
     cursor: pointer;
 }
-.cabecalho button, h1{
-    margin-left: 10px;
-}
+.cabecalho button, h1{margin-left: 10px;}
 .cabecalho .container .fas{
     padding-left: 20px;
     font-size: 30px;
     color: #fff;
 }
-.cabecalho .container .fas:hover{
-    color: #f8a005;
-}
+.cabecalho .container .fas:hover{color: #f8a005;}
 /* Linha de navegação */
 .nav-links{
     width: 100%;
@@ -68,12 +64,8 @@ header{
     background: #f8a005;
     text-decoration: none;
 }
-.nav-links ul .fas{
-    padding-left: 5px;
-}
-.sub-menu{
-    display: none;
-}
+.nav-links ul .fas{padding-left: 5px;}
+.sub-menu{display: none;}
 .ativar:hover .sub-menu{
     display: block;
     position: absolute;
@@ -98,7 +90,7 @@ header{
 }
 /* Introdution */
 .title{
-    font-size: 22px;
+    font-size: 16px;
     color: #fff;
     margin: 5px;
 }
@@ -113,9 +105,7 @@ header{
     justify-content: space-between;
     padding: 2% 3%;
 }
-.introducao h1, p{
-    color: #fff;
-}
+.introducao h1, p{color: #fff;}
 .introducao p{
     font-weight: 600;
     font-size: 15px;
@@ -180,7 +170,8 @@ hr{
     text-align: left;
     display: block;
     background: #6f6b6a;
-    width: auto;
+    max-width: 280px;
+    min-width: 280px;
     border-radius: 10px 10px 10px 0;
 }
 .book p{margin: 5px;}
@@ -189,3 +180,50 @@ hr{
 .estrelas ul{list-style: none;}
 .estrelas ul li{display: inline;}
 .estrelas .fas{color: #f8a005}
+/* Rodapé */
+footer{
+    width: 100%;
+    background: #000;
+    height: 30vh;
+    position: relative;
+}
+.redes-sociais{
+    margin-top: 16px;
+    width: 20%; 
+    text-align: center;
+}
+footer .fab{
+    color: white;
+    font-size: 40px;
+}
+footer .fab:hover{
+    color: #f8a005;
+    cursor: pointer;
+}
+.page-title{
+    margin-top: 50px;
+    color: white;
+    cursor: pointer;
+}
+.page-title:hover{
+    color: #f8a005;
+}
+.list_options{
+    margin-top: 16px;
+    color: #fff;
+    width: 20%;
+}
+.list_options h1{text-align: center;}
+.list_options ul{
+    list-style: none;
+    margin-top: 25px;
+}
+.list_options ul li{
+    display: block;
+    padding-bottom: 5px;
+    color: #a6a4a0;
+    cursor: pointer;
+}
+.list_options ul li:hover{
+    color: #f8a005;
+}
